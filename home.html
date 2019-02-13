@@ -1,0 +1,457 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../dist/fa/css/all.css"/>
+		<link rel="stylesheet" href="../dist/css/carousel.css">
+		<script src="../dist/js/jquery.min.js"></script>
+		<script src="../dist/js/bootstrap.js"></script>
+		<style>
+			.gallery{
+				height:100px;
+				width:200px;
+			}
+		</style>
+		<script type="text/javascript">
+			function unhide(divID) {
+			var item = document.getElementById(divID);
+			if (item) {
+				item.className=(item.className=='hidden')?'unhidden':'hidden';
+				}}
+				
+			$(document).ready(function () {
+			$('ul li:first').addClass('active');
+			$('.tab-content:not(:first)').hide();
+			$('ul li a').click(function (event) {
+			event.preventDefault();
+			var content = $(this).attr('href');
+			$(this).parent().addClass('active');
+			$(this).parent().siblings().removeClass('active');
+			$(content).show();
+			$(content).siblings('.tab-content').hide();
+			});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="model.html">Sheeran</a>
+				  </div>
+				  <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					  <li class="active"><a href="model.html"><span class="fa fa-home"></span> Home</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form1"><span class="fa fa-file"></span>Form1</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form2"><span class="fa fa-users"></span>Form2</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form3"><span class="fa fa-users"></span>Form3</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form4"><span class="fa fa-users"></span>Form4</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form5"><span class="fa fa-users"></span>Form5</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form6"><span class="fa fa-users"></span>Form6</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form7"><span class="fa fa-users"></span>Form7</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#form8"><span class="fa fa-users"></span>Form8</a></li>
+					</ul>
+				  </div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+		  </nav>
+	  </div>
+	  <div class="container text-center">
+		<center class="form-group"><h2>All the Musical Instruments of the World</h2></center>
+		<div class="row form-group">
+			<div class="col-md-3">
+				<img src="../image/project/1.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/2.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/3.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/4.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3">
+				<img src="../image/project/5.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/6.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/7.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/8.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3">
+				<img src="../image/project/9.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/10.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/11.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+			<div class="col-md-3">
+				<img src="../image/project/12.jpg" class="img-responsive img-thumbnail gallery">
+			</div>
+		</div>
+	  </div>
+	  
+	  <!-- form1 model starts here -->
+	  <div class="modal fade" id="form1"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Form1</h4>
+			  </div>
+			  <div class="modal-body">
+				
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>Full Name</label>
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control input-md" placeholder="Full Name">
+					</div>
+					<div class="col-md-2">
+						<label>Mobile No</label>
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control input-md" placeholder="Mobile No">
+					</div>	
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>e-Mail</label>
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control input-md" placeholder="Email">
+					</div>
+					<div class="col-md-2">
+						<label>City</label>
+					</div>
+					<div class="col-md-4">
+						<select class="form-control">
+						<option>Choose City</option>
+						<option>City 1</option>
+						<option>City 2</option>
+					</select>
+					</div>				
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>Message</label>
+					</div>
+					<div class="col-md-10">
+						<textarea class="form-control" placeholder="Write Message Here"></textarea>
+					</div>				
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-primary">Send Message</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Clear</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!--form1 models end here -->
+		
+		<!-- form2 model starts here -->
+		<div class="modal fade" id="form2"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Form2</h4>
+			  </div>
+			  <div class="modal-body">			
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>Name</label>
+					</div>
+					<div class="col-md-10">
+						<input type="text" class="form-control input-md" placeholder="Full Name">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>e-Mail</label>
+					</div>
+					<div class="col-md-10">
+						<input type="text" class="form-control input-md" placeholder="Email">
+					</div>		
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>Password</label>
+					</div>
+					<div class="col-md-10">
+						<input type="password" class="form-control input-md">
+					</div>				
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>Gender</label>
+					</div>
+					<div class="col-md-10">
+						<input type="radio"><label>&nbsp Male</label>
+						&nbsp
+						<input type="radio"><label>&nbsp Female</label>
+					</div>				
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>DOB</label>
+					</div>
+					<div class="col-md-10">
+						<div class="form-control">
+							<select>
+								<option>Day</option>
+							</select>
+							<select>
+								<option>Month</option>
+							</select>
+							<select>
+								<option>Year</option>
+							</select>
+						</div>		
+					</div>				
+				</div>
+				<div class="row form-group">
+					<div class="col-md-2">
+						<label>City</label>
+					</div>
+					<div class="col-md-10">
+						<select class="form-control">
+							<option>Bangalore</option>
+							<option>Chennai</option>
+							<option>Ladak</option>
+						</select>
+					</div>				
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Reset</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- form2 model end here -->
+		<!-- form3 model start here -->
+		<div class="modal fade" id="form3"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+			  <div class="modal-header bg-info text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-warning" id="myModalLabel">Register</h4>
+			  </div>
+			  <div class="modal-body">
+				
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" class="form-control input-md" placeholder="First Name">
+					</div>
+					<div class="col-md-6">
+						<input type="text" class="form-control input-md" placeholder="Last Name">
+					</div>	
+				</div>
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" class="form-control input-md" placeholder="Email">
+					</div>			
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="Password" class="form-control input-md" placeholder="Password">
+					</div>
+					<div class="col-md-6">
+						<input type="Password" class="form-control input-md" placeholder="Confirm Password">
+					</div>
+				</div>
+			  </div>
+			  <div class="modal-footer bg-info">
+				<div class="text-center">
+					<button type="button" class="btn btn-warning">Register</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- form3 model end here -->
+		
+		<!-- form4 model starts here -->
+		<div class="modal fade" id="form4"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+			  <div class="modal-header bg-info text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-warning" id="myModalLabel">Login</h4>
+			  </div>
+			  <div class="modal-body">
+				<div class="row form-group">
+					<label>Email</label>
+					<input type="text" class="form-control input-sm" placeholder="Email">			
+				</div>
+				<div class="row form-group">
+					<label>Password</label>
+					<input type="Password" class="form-control input-sm" placeholder="Password">
+				</div>
+			  </div>
+			  <div class="modal-footer bg-info">
+				<div class="text-center">
+					<button type="button" class="btn btn-warning">Login</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- form4 model end here -->
+		
+		<!-- form6 model starts here -->
+		<div class="modal fade" id="form6"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header bg-info text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-warning" id="myModalLabel">Manage User</h4>
+			  </div>
+			  <div class="modal-body">
+				<table class="table table-responsive table-bordered">
+					<tr class="danger">
+						<th class="text-center">Name</th>
+						<th class="text-center">Contact No</th>
+						<th class="text-center">Age</th>
+						<th class="text-center">City</th>
+						<th class="text-center">Pincode</th>
+						<th class="text-center">Action</th>
+					</tr>
+					<tr class="warning">
+						<td><input type="text" class="form-control input-sm"></td>
+						<td><input type="text" class="form-control input-sm"></td>
+						<td>
+							<input type="text" class="form-control input-sm">	
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Bangalore</option>
+								<option>Chennai</option>
+								<option>Ladak</option>
+							</select></td>
+						<td>
+							<input type="text" class="form-control input-sm">					
+						</td>
+						<td>
+							<button class="btn form-control">Save</button>
+							<button class="btn form-control">Clear</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center">Mr Abc</td>
+						<td class="text-center">88888888</td>
+						<td class="text-center">25 years</td>
+						<td class="text-center">Delhi</td>
+						<td class="text-center">736469</td>
+						<td class="text-center">Delete</td>
+					</tr>
+					<tr>
+						<td class="text-center">Mr Abc</td>
+						<td class="text-center">88888888</td>
+						<td class="text-center">25 years</td>
+						<td class="text-center">Delhi</td>
+						<td class="text-center">736469</td>
+						<td class="text-center">Delete</td>
+					</tr>
+					<tr>
+						<td class="text-center">Mr Abc</td>
+						<td class="text-center">88888888</td>
+						<td class="text-center">25 years</td>
+						<td class="text-center">Delhi</td>
+						<td class="text-center">736469</td>
+						<td class="text-center">Delete</td>
+					</tr>
+					<tr>
+						<td class="text-center">Mr Abc</td>
+						<td class="text-center">88888888</td>
+						<td class="text-center">25 years</td>
+						<td class="text-center">Delhi</td>
+						<td class="text-center">736469</td>
+						<td class="text-center">Delete</td>
+					</tr>
+				</table>
+			  </div>
+			  <div class="modal-footer bg-info">
+				<div class="text-center">
+					<ul class="pagination">
+						<li><a href="#">First</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">Last</a></li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- form6 model end here -->
+		<!-- form7 starts here -->
+		<div class="modal fade" id="form8"  data-backdrop="static"<!--tabindex="-1" role="dialog" aria-labelledby="myModalLabel" -->>
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header bg-info text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-warning" id="myModalLabel">City Information</h4>
+			  </div>
+			  <div class="modal-body">
+					<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="list-group">
+						<li class="list-group-item active"><label>City</label></li>
+						<li class="list-group-item text-info"><a href="#bangalore">Bangalore</a></li>
+						<li class="list-group-item text-info"><a href="#chennai">Chennai  </a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('hampi')"><label>Hampi</label></a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('darzling')"><label>Darzlig</label></a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('agra')"><label>Agra</label></a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('jaipur')"><label>Jaipur</label></a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('chirapunji')"><label>Chirapunji</label></a></li>
+						<li class="list-group-item text-info"><a href="javascript:unhide('dhanushkoti')"><label>Dhanushkoti</label></a></li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+						<div class="tab-content" id="bangalore">
+							<h3>Bangalore</h3>
+							<p id="bangalore">jfjdg gjdfhg dh fdghgdf fg fg fdg dfg dfg dfg dfgdf gf dgdfgdfgbdfgfd</p>
+						</div>
+						<div class="tab-content">
+							<h3>Chennai</h3>
+							<p id="chennai">jfjdg gjdfhg dh fdghgdf fg fg fdg dfg dfg dfg dfgdf gf dgdfgdfgbdfgfd</p>
+						</div>
+				</div>
+			</div>		
+		</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- form7 end here -->
+	</body>
+</html>
